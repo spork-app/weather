@@ -14,5 +14,12 @@
         "psr-4": {
             "Spork\\Weather\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Spork\\Weather\\Providers\\WeatherServiceProvider"
+            ]
+        }
     }
 }
