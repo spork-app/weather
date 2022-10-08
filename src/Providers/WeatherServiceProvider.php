@@ -2,7 +2,7 @@
 
 namespace Spork\Weather\Providers;
 
-use App\Spork;
+use Spork\Core\Spork;
 use Spork\Weather\Contracts\Services\WeatherServiceContract;
 use Spork\Weather\Service\WeatherService;
 use Illuminate\Support\ServiceProvider;
