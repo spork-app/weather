@@ -17,11 +17,11 @@ class WeatherService implements WeatherServiceContract
             'key',
             now(),
             fn () => json_decode(
-                    $client
-                        ->get(sprintf('http://api.weatherapi.com/v1/forecast.json?key=%s&q=%s&aqi=no&alerts=yes&days=3', env('WEATHER_API_KEY'), $address))
-                        ->getBody()
-                        ->getContents()
-                )
+                $client
+                    ->get(sprintf('http://api.weatherapi.com/v1/forecast.json?key=%s&q=%s&aqi=no&alerts=yes&days=3', env('WEATHER_API_KEY'), $address))
+                    ->getBody()
+                    ->getContents()
+            )
         );
 
         $currentTime = Carbon::parse($weather->location->localtime, $weather->location->tz_id);
