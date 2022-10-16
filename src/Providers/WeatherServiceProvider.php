@@ -2,16 +2,16 @@
 
 namespace Spork\Weather\Providers;
 
+use Illuminate\Support\ServiceProvider;
 use Spork\Core\Spork;
 use Spork\Weather\Contracts\Services\WeatherServiceContract;
 use Spork\Weather\Service\WeatherService;
-use Illuminate\Support\ServiceProvider;
 
 class WeatherServiceProvider extends ServiceProvider
 {
     public function register()
     {
         $this->app->bind(WeatherServiceContract::class, WeatherService::class);
-        Spork::addFeature('Weather', 'CloudIcon', '/weather', 'tool'); 
+        Spork::addFeature('Weather', 'CloudIcon', '/weather', 'tool');
     }
 }
