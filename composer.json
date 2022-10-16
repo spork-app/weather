@@ -20,7 +20,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spork\\Weather\\Providers\\WeatherServiceProvider"
+                "Spork\\Weather\\WeatherServiceProvider"
             ]
         }
     },

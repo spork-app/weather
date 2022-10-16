@@ -1,6 +1,6 @@
 <?php
 
-namespace Spork\Weather\Providers;
+namespace Spork\Weather;
 
 use Illuminate\Support\ServiceProvider;
 use Spork\Core\Spork;
