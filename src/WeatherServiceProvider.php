@@ -12,7 +12,7 @@ class WeatherServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(WeatherServiceContract::class, WeatherService::class);
-        $this->mergeConfigFrom(__DIR__ . '/../config/spork.php', 'spork.weather');
+        $this->mergeConfigFrom(__DIR__.'/../config/spork.php', 'spork.weather');
         Spork::addFeature('Weather', 'CloudIcon', '/weather', 'tool');
     }
 }
